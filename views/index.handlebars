@@ -41,9 +41,9 @@ body {
     </form>
   </center>
 
-
   <div class="row">
     <div class="column">
+      <div style=margin-left:100px>
       <h3 class="submitFont">Burgers Available</h3>
       <div id="burgersAvailable">
 
@@ -62,14 +62,17 @@ body {
           </div>
           {{/unless}}
         {{/each}}
-
+        </div>
       </div>
     </div>
 
-      <div class="column">
+
+
+      <div class="column" style=column-width:5px;>
       </div>  
 
       <div class="column">
+        <div style=margin-left:100px>
        <h3 class="submitFont">Burgers Devoured</h3>
         <div id="alreadyEaten">
 
@@ -79,10 +82,11 @@ body {
               <div class="input-group">
                 <li class="form-control" style=padding-bottom:15px> {{this.burger}}</li>
               </div>
-              <div>
+            <div>
             {{/if}}
           {{/each}}
 
+        </div>
         </div>
       </div>
     </div>
