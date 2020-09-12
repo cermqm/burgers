@@ -22,6 +22,7 @@ var connection;
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
+    // connection = mysql.createConnection("mysql: //pct3t68lgirgnaeh:nud4z6qrl7t2b7qc@w1h4cr5sb73o944p.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ld9qt83xeqbpgxyt");
     connection = mysql.createConnection({
         host: "localhost",
         port: 3306,
@@ -57,6 +58,7 @@ app.get("/", function(req, res) {
 app.post("/api/burgers", function(req, res) {
     connection.query("INSERT INTO burgers_db.burgers (burger, devoured) VALUES (?, ?)", [req.body.burger, false], function(err, result) {
         if (err) {
+            console.log("error = ", err.message);
             return res.status(500).end();
         }
 
