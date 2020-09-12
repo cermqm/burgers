@@ -2,7 +2,7 @@ var express = require("express");
 var exphbs = require("express-handlebars");
 var mysql = require("mysql");
 
-var connection = require("./.env/mysqlconnection.js")
+var connection = require("./config/mysqlconnection.js")
 
 
 var app = express();
