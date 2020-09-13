@@ -43,7 +43,16 @@ License - [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
 ### - ScreenShots
 
-[Screen Shot #1]( SC#1.png)
+![Screen Shot #1](./screenshots/SC1.png)
+![Screen Shot #2](./screenshots/SC2.png)
+![Screen Shot #3](./screenshots/SC3.png)
+![Screen Shot #4](./screenshots/SC4.png)
+![Screen Shot #5](./screenshots/SC5.png)
+![Screen Shot #6](./screenshots/SC6.png)
+![Screen Shot #7](./screenshots/SC7.png)
+![Screen Shot #8](./screenshots/SC8.png)
+![Screen Shot #9](./screenshots/SC9.png)
+![Screen Shot #10](./screenshots/SC10.png)
 
 
 
