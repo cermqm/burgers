@@ -1,3 +1,4 @@
+{{!-- some styling for the page --}}
 <style>
 * {
   box-sizing: border-box;
@@ -7,7 +8,7 @@ body {
   background-color: goldenrod;
 }
 
-/* Create three equal columns that floats next to each other */
+{{!-- Create three equal columns that floats next to each other --}}
 .column {
   float: left;
   width: 33.33%;
@@ -15,7 +16,7 @@ body {
   height: 300px; /* Should be removed. Only for demonstration */
 }
 
-/* Clear floats after the columns */
+{{!-- Clear floats after the columns --}}
 .row:after {
   content: "";
   display: table;
@@ -27,6 +28,7 @@ body {
 </br>
 </br>
       <p>
+        {{!-- burger image for page --}}
         <img src = "/images/burger.jpg" width="200">
       </p>
     <h1>Eat-Da-Burger</h1>
@@ -38,13 +40,14 @@ body {
           <div class="col-md-3"></div> 
 
           <div class="form-group col-md-6">
+            {{!-- input box for new burger order --}}
             <textarea class="form-control" type="text" columns="6" rows="2" id="new_burger required value="" name="burger"></textarea>
           </div>
 
           <div class="col-md-3"></div> 
         </div>
       
-        {{!-- Submit Button --}}
+        {{!-- submit button for order burger--}}
         <center>
           <button id="submit-button" type="submit" class="btn btn-primary">Order Burger!</button>
           <h4>Build your burger in the box above and click "Order Burger"... </h4>
@@ -55,13 +58,14 @@ body {
 
   </center>
  
- 
+ {{!-- define row for page --}}
   <div class="row">
   <center>
+    {{!-- Define first column for burgers avilable --}}
     <div class="column">
       <h3 class="submitFont">Burgers Available</h3>
       <div id="burgersAvailable">
-
+        {{!-- loop through burgers and display with devour button --}}
         {{#each burgers}}
           {{#unless devoured}}
           <div style=padding:5px>
@@ -79,14 +83,16 @@ body {
 
       </div>
     </div>
-
+      {{!-- blank column to help the page flow better --}}
       <div class="column" style=column-width:5px;>
       </div>  
 
+      {{!-- 3rd column to make the page clean --}}
       <div class="column">
       <h3 class="submitFont">Burgers Devoured</h3>
       <div id="alreadyEaten">
 
+        {{!-- loop through burgers that have been devoured and display --}}
         {{#each burgers}}
           {{#if this.devoured}}
             <div style=padding:5px>

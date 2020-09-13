@@ -1,6 +1,7 @@
 // include orm.js
 var orm = require('../config/orm.js');
 
+// connector for this.selectAll, insertone and updateone
 var burger = {
 
     selectAll: function(callback) {

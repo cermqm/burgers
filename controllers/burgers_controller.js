@@ -19,7 +19,7 @@ router.get('/index', function(req, res) {
 // route for add burger
 router.post('/burger/create', function(req, res) {
     // console.log("req = ", req);
-    console.log("req.body.burger = " + req.body.burger);
+    // console.log("req.body.burger = " + req.body.burger);
     burger.insertOne(req.body.burger, function() {
         res.redirect('/index');
     });
